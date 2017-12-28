@@ -1,4 +1,77 @@
-<!-- <h1>StaticPages#personalInterests</h1>
-<p>Find me in app/views/static_pages/personalInterests.html.erb</p> -->
-<div class ="bi2">
-	</div>
+<!-- Animated opening -->
+<div class="animate-hide animate-container">
+  <div class="animate-item animate-inout">
+    <h1 class="">Welcome</h1>
+  <h1 class="">To</h1>
+  <h1 class="">My Google API</h1>
+  </div>
+  
+  <h1 class="animate-inout animate-fourth">Food and Other Thing</h1>
+  
+</div>
+
+
+<!-- Split Container -->
+<div class="body-content">
+
+
+  <div class="split-container">
+    <input type="radio" id = "choosetop" name="sidechoose"/>
+    <input type="radio" id = "choosemid" name="sidechoose" checked/>
+    <input type="radio" id = "choosebottom" name="sidechoose"/>
+    <div class="split-slider" id="slider">
+      <div id="upper">
+        <nav>
+          <ul class="flex-center">
+            <label for="topview1">Order</label>
+            <label for="topview2">Bakery</label>
+            <label for="topview3">Menu</label>
+          </ul>
+        </nav>
+        <div class="slider-container">
+          <input type="radio" name="topview" id="topview1"/>
+          <input type="radio" name="topview" id="topview2" checked/>
+          <input type="radio" name="topview" id="topview3"/>
+          <div class="slider-content">
+            <div class="slider-item" id="order"></div>
+            <div class="slider-item" id="bakery"></div>
+            <div class="slider-item" id="menu-bake">
+              <label for="choosebottom" class="switchmenu">Other Menu?</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="mid" >
+        <div id="topside" class="flex-center">
+            <h1 class="animate-reveal animate-fifth"><a href="/ask">Food API</a></h1>
+            <div class="bg-cover"></div>
+        </div>
+        <div id="bottomside" class="flex-center">
+            <h1 class="animate-reveal animate-sixth">The Other Thing</h1>
+            <div class="bg-cover"></div>
+        </div>
+      </div>
+      <div id="lower" class="flex-center">
+        <nav>
+          <ul class="flex-center">
+            <label for="bottomview1">Reserve</label>
+            <label for="bottomview2">Restaurant</label>
+            <label for="bottomview3">Menu</label>
+          </ul>
+        </nav>
+        <div class="slider-container">
+          <input type="radio" name="bottomview" id="bottomview1"/>
+          <input type="radio" name="bottomview" id="bottomview2" checked/>
+          <input type="radio" name="bottomview" id="bottomview3"/>
+          <div class="slider-content" >
+            <div class="slider-item" id="reserve"></div>
+            <div class="slider-item" id="restaurant"></div>
+            <div class="slider-item" id="menu-rest">
+              <label for="choosetop" class="switchmenu">Other Menu?</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
